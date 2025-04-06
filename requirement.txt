@@ -1,18 +1,24 @@
+# Core Django packages
 django
 djangorestframework
+
+# PostgreSQL support
+psycopg2-binary  # PostgreSQL database driver
+
+# Task queue & messaging
 celery
 redis
+
+# Filtering & CORS
 django-cors-headers
 django-filter
-#django-mssql-backend  # SQL Server backend for Django
-#pyodbc  # Required for SQL Server connection
-django-cors-headers  # If handling CORS
-django-environ  # For environment variable management
-#djangorestframework-simplejwt  # For JWT authentication
-#gunicorn  # If deploying with a WSGI server
-#whitenoise  # For serving static files
 
-#Ubuntu/Linux:
-#sudo apt update
-#sudo apt install unixodbc-dev
-#sudo apt install msodbcsql17
+# Environment variable management
+django-environ
+
+# Optional: JWT authentication
+djangorestframework-simplejwt
+
+# Optional: For production deployment (Gunicorn + static files)
+#gunicorn
+#whitenoise
